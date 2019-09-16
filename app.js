@@ -21,7 +21,7 @@ app.use(
 
 mongoose.connect(`mongodb+srv://${process.env.MONGO_USER}:${process.env.MONGO_PASSWORD}@events2-kvw9e.mongodb.net/${process.env.MONGO_DB}?retryWrites=true&w=majority`)
     .then( () => {
-            app.listen(3030);
+            app.listen(process.env.PORT || 3030);
     })
     .catch(
         err => {
