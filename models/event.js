@@ -21,6 +21,9 @@ const eventSchema = new Schema ({
         type: Schema.Types.ObjectId,
         ref: 'Place'
     },
+    mainPicture: {
+        type: String,
+    },
     persons: [
         {
             type: Schema.Types.ObjectId,

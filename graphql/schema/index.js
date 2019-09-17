@@ -5,9 +5,10 @@ module.exports = buildSchema(`
             _id: ID!
             title: String!
             description: String!   
-            dateFrom: String!   
-            dateTo: String!  
+            dateFrom: String  
+            dateTo: String  
             place: Place!  
+            mainPicture: String
             persons: [Person!] 
         }
         
