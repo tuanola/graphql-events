@@ -42,6 +42,7 @@ module.exports = buildSchema(`
     
         type RootQuery {
             events: [Event!]!
+            event(_id: ID!): Event
             places: [Place!]!
             persons: [Person!]!
         }

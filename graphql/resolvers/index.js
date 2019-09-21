@@ -1,7 +1,9 @@
 const eventsResolver = require('./events');
+const eventByIdResolver = require('./event');
 
 const rootResolver = {
-    ...eventsResolver
+    ...eventsResolver,
+    ...eventByIdResolver,
 };
 
 module.exports = rootResolver;
